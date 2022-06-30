@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+
+<body>
+    <input id="search">
+    <button id="sort">Sort By Name (Click for desc & Double click for asc)</button>
+    <button id="sortName">Sort By Full Name (Click for desc & Double click for asc)</button>
+    <select id="page-size">
+        <option value="10">10</option>
+        <option value="20" selected='selected'>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="All">All</option>
+    </select>
+    <ul style="display: flex; flex-wrap: wrap; list-style: none;" id="pagination"></ul>
+    <table id="catTable">
+        <thead>
+            <tr>
+                <th data-sort="icon">Icon</th>
+                <th data-sort="name">Name</th>
+                <th data-sort="biography.fullName">Full Name</th>
+                <th data-sort="powerstats.intelligence">Intelligence</th>
+                <th data-sort="powerstats.strength">Strength</th>
+                <th data-sort="powerstats.speed">Speed</th>
+                <th data-sort="powerstats.durability">Durability</th>
+                <th data-sort="powerstats.power">Power</th>
+                <th data-sort="powerstats.combat">Combat</th>
+                <th data-sort="appearance.race">Race</th>
+                <th data-sort="appearance.gender">Gender</th>
+                <th data-sort="appearance.height[1]">Height</th>
+                <th data-sort="appearance.weight[1]">Weight</th>
+                <th data-sort="biography.placeOfBirth">Place of Birth</th>
+                <th data-sort="biography.alignment">Alignment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4"><i>Loading...</i></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="sortable.js"></script>
+
+</body>
+
+</html>
